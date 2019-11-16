@@ -3,10 +3,19 @@ body {
 }
 
 main > .container {
-  padding: 60px 15px 0;
+  padding: 6% 15px 0;
 }
 
-.content-grid {
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: #10316b;
+}
+
+.main-content-grid {
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,12 +24,50 @@ main > .container {
   grid-row-gap: 0px;
 }
 
+/* animated css start */
+
+.ml11 {
+  /* font-weight: 700;
+  font-size: 3.5em; */
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  /* padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em; */
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* animated css end */
+
 .intro-text {
   margin-top: 120px;
 }
 
 .my-photo {
   width: 300px;
+  z-index: 999;
   margin-top: 40px;
 }
 
@@ -65,4 +112,66 @@ main > .container {
 .project ul {
   padding-left: 15px;
   list-style-type: none;
+}
+
+.project a {
+  color: #10316b;
+}
+
+/* ----------media queries---------- */
+
+@media (max-width: 850px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+
+}
+
+@media (max-width: 630px) {
+
+  .my-photo {
+    width: 200px;
+    margin-top: 120px;
+  }
+
+}
+
+@media (max-width: 430px) {
+
+  h1 {
+    font-size: 2.9rem;
+  }
+
+  .my-photo {
+    margin-top: 140px;
+    padding-left: 15px;
+  }
+
+  .project-screenshot {
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .my-photo {
+    padding-left: 15px;
+    z-index: 999;
+    width: 197px;
+  }
+
 }
