@@ -165,13 +165,13 @@ h1 {
 @media (max-width: 380px) {
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.20rem;
   }
 
   .my-photo {
     padding-left: 15px;
     z-index: 999;
-    width: 185px;
+    width: 180px;
   }
 
 }
