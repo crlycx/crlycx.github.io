@@ -162,14 +162,14 @@ h1 {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 375px) {
 
   h1 {
     font-size: 2rem;
   }
 
   .my-photo {
-    /* padding-left: 10px; */
+    padding-left: 10px;
     z-index: 999;
     width: 180px;
   }
