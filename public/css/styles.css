@@ -169,7 +169,7 @@ h1 {
   }
 
   .my-photo {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     z-index: 999;
     width: 180px;
   }
