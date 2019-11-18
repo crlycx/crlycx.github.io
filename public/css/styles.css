@@ -165,13 +165,17 @@ h1 {
 @media (max-width: 380px) {
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .my-photo {
     padding-left: 10px;
     z-index: 999;
     width: 180px;
+  }
+
+  .project-screenshot {
+    width: 190px;
   }
 
 }
