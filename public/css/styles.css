@@ -102,6 +102,7 @@ h1 {
 .project {
   display: table;
   max-width: 425px;
+  min-width: 300px;
 }
 
 .project img, ul {
@@ -147,13 +148,24 @@ h1 {
 
 @media (max-width: 430px) {
 
+  .main-content-grid {
+    text-align: center;
+    align-items: center;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+
   h1 {
     font-size: 2.9rem;
   }
 
   .my-photo {
-    margin-top: 140px;
-    padding-left: 15px;
+    margin: 0;
+    padding: 0;
   }
 
   .project-screenshot {
@@ -164,18 +176,42 @@ h1 {
 
 @media (max-width: 380px) {
 
+  .main-content-grid {
+    max-width: 330px;
+  }
+
   h1 {
-    font-size: 1.8rem;
+    font-size: 2.25rem;
   }
 
   .my-photo {
-    padding-left: 10px;
+    padding: 0;
     z-index: 999;
-    width: 180px;
+    width: 197px;
   }
 
   .project-screenshot {
     width: 190px;
+  }
+
+}
+
+ @media (max-width: 325px) {
+
+  .main-content-grid {
+    text-align: center;
+    align-items: center;
+    max-width: 320px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+
+  .my-photo {
+    margin: 0;
+    padding: 0;
   }
 
 }
